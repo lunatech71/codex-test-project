@@ -1,0 +1,22 @@
+[project]
+name = "global-industry-rotation"
+version = "0.1.0"
+description = "Cross-market global industry rotation model for A/HK/US markets"
+readme = "Read me.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "scipy>=1.10",
+  "statsmodels>=0.14",
+  "openpyxl>=3.1",
+]
+
+[project.scripts]
+global-industry-rotation = "industry_rotation.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+industry_rotation = ["config/*.json", "data/*.csv"]
