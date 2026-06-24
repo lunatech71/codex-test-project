@@ -1,0 +1,24 @@
+{
+  "model": {
+    "rolling_train_years": 3,
+    "rolling_test_years": 1,
+    "top_n": 3,
+    "bottom_n": 3,
+    "benchmark": "market_cap",
+    "signal_thresholds": {"overweight_quantile": 0.67, "underweight_quantile": 0.33, "strong_signal_sigma": 2.0},
+    "constraints": {"max_overweight_deviation": 0.15, "max_underweight_deviation": -0.10, "max_annual_turnover": 4.0},
+    "crowding": {"turnover_percentile_threshold": 0.90, "volatility_spike_z_threshold": 1.5, "leader_valuation_premium_threshold": 0.80}
+  },
+  "weight_profiles": {
+    "default": {
+      "CN": {"macro": 0.25, "fundamental": 0.20, "flow": 0.35, "technical_valuation": 0.20},
+      "HK": {"macro": 0.25, "fundamental": 0.25, "flow": 0.30, "technical_valuation": 0.20},
+      "US": {"macro": 0.25, "fundamental": 0.35, "flow": 0.15, "technical_valuation": 0.25}
+    }
+  },
+  "markets": {
+    "CN": {"name": "A股", "taxonomy": "中证一级行业", "shorting_allowed": false},
+    "HK": {"name": "港股", "taxonomy": "恒生综合行业分类", "shorting_allowed": true},
+    "US": {"name": "美股", "taxonomy": "GICS一级行业", "shorting_allowed": true}
+  }
+}

@@ -1,0 +1,12 @@
+semantic_industry,cn_industry,hk_industry,us_industry,notes
+Energy,能源,能源业,Energy,油气/煤炭/能源设备，跨市场语义较一致
+Materials,材料,原材料业,Materials,化工/金属/建材；港股含部分资源品
+Industrials,工业,工业,Industrials,资本品/运输/商业服务
+Consumer Discretionary,可选消费,非必需性消费,Consumer Discretionary,汽车/耐用品/零售/消费者服务
+Consumer Staples,必需消费,必需性消费,Consumer Staples,食品饮料/家庭个人用品/日常零售
+Health Care,医药,医疗保健业,Health Care,药品/器械/医疗服务
+Financials,金融,金融业,Financials,A股金融含银行证券保险；美股GICS含多元金融
+Real Estate,房地产,地产建筑业,Real Estate,港股地产建筑与美股REITs口径存在差异
+Information Technology,信息技术,资讯科技业,Information Technology,半导体/软件/硬件；港股互联网部分可能在资讯科技
+Communication Services,通信服务,电讯业,Communication Services,港股电讯偏运营商；美股含媒体娱乐互联网平台
+Utilities,,公用事业,Utilities,A股中证一级未单列时作为缺失语义处理
